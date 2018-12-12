@@ -19,5 +19,12 @@ class Persona{
     void comer(){
         System.out.println("Estoy Comiendo");
     }
+    // Métodos Getter y Setter
+    String getNombre(){
+        return this.nombre;
+    }
+    void setNombre(String nombre){
+        this.nombre = nombre;
+    }
 
 }
