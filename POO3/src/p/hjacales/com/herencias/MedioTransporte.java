@@ -9,9 +9,9 @@ package p.hjacales.com.herencias;
  *
  * @author daniel
  */
-public class Persona {
+public abstract class MedioTransporte {
     private String nombre;
-    private byte edad;
+    private double velocidad;
 
     public String getNombre() {
         return nombre;
@@ -21,13 +21,15 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public byte getEdad() {
-        return edad;
+    public double getVelocidad() {
+        return velocidad;
     }
 
-    public void setEdad(byte edad) {
-        this.edad = edad > 0 ? edad : 0 ; // Más seguro
+    public void setVelocidad(double velocidad) {
+        this.velocidad = velocidad;
     }
+    public abstract void Transportar(); // Este metodo es abstracto
+    // Tienen que añadir la logica
     
     
 }
