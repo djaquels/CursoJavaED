@@ -6,6 +6,7 @@
 package p.hjacales.com.ejecutables;
 
 import p.hjacales.com.funcional.ImplementacionFuncional;
+import p.hjacales.com.funcional.InterfaceFuncional;
 
 /**
  *
@@ -19,6 +20,8 @@ public class pruebaFuncional {
         impl.hacerAlgoConcreto();
         impl.hablar();
         impl.saludar();
+        InterfaceFuncional infun = ()-> System.out.println(" Hola desde lamnda");
+        infun.unicoMetodoAbstracto();
     }
 
 }
